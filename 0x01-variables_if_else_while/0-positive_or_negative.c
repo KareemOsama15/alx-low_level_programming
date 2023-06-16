@@ -5,10 +5,8 @@
  *
  * Return: n > 0: is positive , n = 0: is zero , n < 0: is negative
  */
-int main(void)
+int main(int n)
 {
-	int n;
-
 	if (n > 0)
 	{
 		printf("%d is positive", n);
