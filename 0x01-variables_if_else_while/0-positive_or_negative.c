@@ -11,14 +11,14 @@ int main(void)
 
 	if (n > 0)
 	{
-		return (n, "%f is positive");
+		printf("%d is positive", n);
 	}
 	else if (n < 0)
 	{
-		return (n, "%f is negative");
+		printf("%d is negative", n);
 	}
 	else
 	{
-		return (n, "%d is zero");
+		printf("%d is zero", n);
 	}
 }
