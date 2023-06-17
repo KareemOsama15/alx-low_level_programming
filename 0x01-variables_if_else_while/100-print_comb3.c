@@ -7,22 +7,21 @@
  */
 int main(void)
 {
-	int i = 0;
-	int e = 1;
+	int i = 48;
+	int e = 49;
 
 	while (e > i)
 	{
 		putchar(i);
 		putchar(e);
-
-		i++;
 		e++;
-
-		while (ie != 89)
+		if (e == 57)
 		{
-			putchar(',');
-			putchar(' ');
+			i++;
+			e = 49;
 		}
+		putchar(',');
+		putchar(' ');
 	}
 	return (0);
 }
