@@ -18,13 +18,14 @@ int main(void)
 			{
 				putchar(i);
 				putchar(e);
+			
+				if (i == 56 && e == 57)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
 			}
-			if (i == 56 && e == 57)
-			{
-				break;
-			}
-			putchar(',');
-			putchar(' ');
 			i++;
 		}
 		e++;
