@@ -20,6 +20,10 @@ int main(void)
 			i++;
 			e = 49;
 		}
+		if (e == 57; i == 56)
+		{
+			break;
+		}
 		putchar(',');
 		putchar(' ');
 	}
