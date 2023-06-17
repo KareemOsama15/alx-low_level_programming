@@ -10,21 +10,24 @@ int main(void)
 	int i = 48;
 	int e = 49;
 
-	while (e > i)
+	while (e < 58)
 	{
-		putchar(i);
-		putchar(e);
-		e++;
-		if (e == 57)
+		while (i < 58)
 		{
+			if (e > i)
+			{
+				putchar(i);
+				putchar(e);
+			}
+			if (i == 56 && e == 57)
+			{
+				break;
+			}
+			putchar(',');
+			putchar(' ');
 			i++;
 		}
-		if (e == 57 && i == 56)
-		{
-			break;
-		}
-		putchar(',');
-		putchar(' ');
+		e++;
 	}
 	return (0);
 }
