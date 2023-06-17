@@ -14,16 +14,18 @@ int main(void)
 		y = 48;
 		while (y < 58)
 		{
-			if (y > x && y != x)
+			if (y > x)
 			{
 				putchar(x);
 				putchar(y);
 
-				if (x != 56 && y != 57)
+				if (x == 56 && y == 57)
 				{
-					putchar(',');
-					putchar(' ');
+					break;
 				}
+
+				putchar(',');
+				putchar(' ');
 			}
 			y++;
 		}
