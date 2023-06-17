@@ -18,7 +18,6 @@ int main(void)
 		if (e == 57)
 		{
 			i++;
-			e = 49;
 		}
 		if (e == 57 && i == 56)
 		{
