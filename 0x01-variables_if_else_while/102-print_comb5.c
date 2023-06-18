@@ -28,8 +28,9 @@ int main(void)
 						putchar(y);
 						putchar(z);
 					if (z == 57 && y == 57 && x == 56 && w == 57)
+					{
 						break;
-
+					}
 						putchar(',');
 						putchar(' ');
 					}
