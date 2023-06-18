@@ -14,9 +14,7 @@ int main(void)
 		x = 48;
 		while (x < 58)
 		{
-			putchar(' ');
 			y = 48;
-
 			while (y < 58)
 			{
 				z = 48;
@@ -26,6 +24,7 @@ int main(void)
 					{
 						putchar(w);
 						putchar(x);
+						putchar(' ');
 						putchar(y);
 						putchar(z);
 					}
