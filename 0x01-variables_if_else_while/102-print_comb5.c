@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int w = 48, x, y, z;
+	int w = 48, x, y, z, m1, m2;
 
 	while (w < 58)
 	{
@@ -20,7 +20,10 @@ int main(void)
 				z = 48;
 				while (z < 58)
 				{
-					if (y + z > x + w)
+					m1 = (w * 10) + x;
+					m2 = (y * 10) + z;
+
+					if (m2 > m1)
 					{
 						putchar(w);
 						putchar(x);
