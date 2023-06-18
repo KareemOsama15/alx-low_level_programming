@@ -45,5 +45,6 @@ int main(void)
 		}
 		w++;
 	}
+	putchar('\n');
 	return (0);
 }
