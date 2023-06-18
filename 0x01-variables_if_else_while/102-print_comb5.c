@@ -20,11 +20,11 @@ int main(void)
 				z = 48;
 				while (z < 58)
 				{
-					/*if (z == x && y == w)
+					if (z == x && y == w)
 					{
 						break;
-					}*/
-					if (y + z >= x + w)
+					}
+					else if (y + z >= x + w)
 					{
 						putchar(w);
 						putchar(x);
