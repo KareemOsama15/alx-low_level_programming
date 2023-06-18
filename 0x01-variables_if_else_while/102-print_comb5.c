@@ -20,7 +20,7 @@ int main(void)
 				z = 48;
 				while (z < 58)
 				{
-					if (z > y && z > x && z > w && y > x && y > w && x > w)
+					if (y + z > x + w)
 					{
 						putchar(w);
 						putchar(x);
