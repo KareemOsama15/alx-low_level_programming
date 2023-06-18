@@ -24,7 +24,7 @@ int main(void)
 					{
 						break;
 					}*/
-					else if (y + z >= x + w)
+					if (y + z >= x + w)
 					{
 						putchar(w);
 						putchar(x);
