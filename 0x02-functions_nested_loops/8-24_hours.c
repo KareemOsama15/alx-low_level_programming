@@ -16,11 +16,14 @@ void jack_bauer(void)
 		while (b < 58)
 		{
 			c = 48;
-			while (c < 58)
+			while (c < 55)
 			{
 				d = 48;
 				while (d < 58)
 				{
+					if (a >= 50 && b >= 52)
+						break;
+
 					_putchar(a);
 					_putchar(b);
 					_putchar(':');
@@ -28,8 +31,6 @@ void jack_bauer(void)
 					_putchar(d);
 					_putchar('\n');
 
-					if (a == 50 && b == 51 && c == 53 && d == 57)
-						break;
 					d++;
 				}
 				c++;
