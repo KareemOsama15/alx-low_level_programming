@@ -13,10 +13,10 @@ void jack_bauer(void)
 	while (a < 51)
 	{
 		b = 48;
-		while (b < 52)
+		while (b < 58)
 		{
 			c = 48;
-			while (c < 54)
+			while (c < 58)
 			{
 				d = 48;
 				while (d < 58)
