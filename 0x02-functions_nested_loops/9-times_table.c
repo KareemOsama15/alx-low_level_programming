@@ -8,11 +8,18 @@
  */
 void times_table(void)
 {
-	int numbers[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	int x, y, res;
 
-	for (int i = 0; i < 10; i++)
+	for (x = 0; x < 10; x++)
 	{
-		numbers[] *= i;
-		printf("%d, \n", numbers[]);
+		for (y = 1; y <= 9; y++)
+		{
+			res = x * y;
+
+			_putchar(res);
+			_putchar(',');
+			_putchar(' ');
+		}
+		_putchar('\n');
 	}
 }
