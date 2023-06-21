@@ -4,6 +4,8 @@
 /**
  * print_times_table - function that prints the n times table, starting with 0
  *
+ * @n: parameter that contain number
+ *
  * Return:  the n times table
  */
 void print_times_table(int n)
