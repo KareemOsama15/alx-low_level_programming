@@ -26,6 +26,7 @@ void print_times_table(int n)
 				if ( res <= 9)
 				{
 					_putchar(' ');
+					_putchar(' ');
 					_putchar(res);	
 				}
 				else if (res <= 99)
@@ -37,7 +38,7 @@ void print_times_table(int n)
 				else
 				{
 					_putchar(((res / 100) % 10) + 48);
-					_putchar(((res % 10) % 10) + 48);
+					_putchar(((res / 10) % 10) + 48);
 					_putchar((res % 10) + 48);
 				}
 			}
