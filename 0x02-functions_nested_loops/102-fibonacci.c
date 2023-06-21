@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	int f1 = 1, f2 = 2, fn, i = 1;
+	int f1 = 1, f2 = 2, fn, i = 0;
 
 	printf("%d, %d", f1, f2);
-	while (i < 49)
+	while (i < 48)
 	{
 		fn = f1 + f2;
 		printf(", %d", fn);
