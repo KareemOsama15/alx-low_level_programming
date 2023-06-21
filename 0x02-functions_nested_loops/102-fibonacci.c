@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long long int f1 = 1, f2 = 2, fn;
+	long int f1 = 1, f2 = 2, fn;
 	int i = 1;
 
 	printf("%ld, %ld", f1, f2);
