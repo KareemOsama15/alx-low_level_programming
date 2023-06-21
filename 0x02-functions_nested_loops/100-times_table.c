@@ -12,8 +12,8 @@ void print_times_table(int n)
 {
 	int i, e, res;
 
-	if (n >= 0 && n <= 15 )
-	{	
+	if (n >= 0 && n <= 15)
+	{
 		for (i = 0; i <= n; i++)
 		{
 			_putchar(48);
@@ -23,11 +23,11 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 
-				if ( res <= 9)
+				if (res <= 9)
 				{
 					_putchar(' ');
 					_putchar(' ');
-					_putchar(res + 48);	
+					_putchar(res + 48);
 				}
 				else if (res <= 99)
 				{
