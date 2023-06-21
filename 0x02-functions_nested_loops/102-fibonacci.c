@@ -20,5 +20,7 @@ int main(void)
 		f2 = fn;
 		i++;
 	}
+	printf("\n");
+	
 	return (0);
 }
