@@ -7,13 +7,14 @@
  */
 int main(void)
 {
-	int f1 = 1, f2 = 2, fn, i = 0;
+	long long int f1 = 1, f2 = 2, fn;
+	int i = 1;
 
-	printf("%d, %d", f1, f2);
-	while (i < 48)
+	printf("%ld, %ld", f1, f2);
+	while (i < 49)
 	{
 		fn = f1 + f2;
-		printf(", %d", fn);
+		printf(", %ld", fn);
 
 		f1 = f2;
 		f2 = fn;
