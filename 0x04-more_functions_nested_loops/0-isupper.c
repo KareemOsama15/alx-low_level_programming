@@ -11,7 +11,12 @@
 int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
+	{
 		putchar(49);
+	}
 	else
+	{
 		putchar(48);
+	}
+	return (0);
 }
