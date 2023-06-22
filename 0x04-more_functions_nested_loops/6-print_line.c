@@ -18,8 +18,8 @@ void print_line(int n)
 		while (i <= n)
 		{
 			_putchar(c);
+			_putchar('\n');
 			i++;
 		}
-		_putchar('\n');
 	}
 }
