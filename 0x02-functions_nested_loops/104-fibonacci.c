@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	long long f1 = 1, f2 = 2, fn;
+	long int f1 = 1, f2 = 2, fn;
 	int i;
 
-	printf("%d, %d", f1, f2);
+	printf("%ld, %ld", f1, f2);
 
 	for (i = 0; i < 98; i++)
 	{
@@ -18,7 +18,7 @@ int main(void)
 		f1 = f2;
 		f2 = fn;
 
-		printf(", %lld", fn);
+		printf(", %ld", fn);
 	}
 
 	printf("\n");
