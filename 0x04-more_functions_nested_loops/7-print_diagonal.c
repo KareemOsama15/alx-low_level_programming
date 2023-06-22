@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_line - program draws a diagonal line
+ * print_diagonal - program draws a diagonal line
  * in the terminal.
  *
  * @n: parameter contain tests
@@ -11,11 +11,11 @@
  */
 void print_diagonal(int n)
 {
-	int i, e;
+	int i, j;
 
-	for (i = 1; i <= n; i++)
+	for (i = 0; i < n; i++)
 	{
-		for (e = 1; e < i; e++)
+		for (j = 0; j < i; j++)
 		{
 			_putchar(' ');
 		}
