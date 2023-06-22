@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-*int _isupper - function that checks for uppercase character.
+*_isupper - function that checks for uppercase character.
 *
 *@c: parameter that contain the letter
 *
@@ -12,11 +12,10 @@ int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
 	{
-		putchar(49);
+		return (1);
 	}
 	else
 	{
-		putchar(48);
+		return (0);
 	}
-	return (0);
 }
