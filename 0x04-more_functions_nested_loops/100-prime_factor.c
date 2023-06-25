@@ -8,18 +8,15 @@
 int main(void)
 {
 	long int num = 612852475143;
-	unsigned int i, fp = 2;
+	unsigned int i;
 
 	for (i = 2; i <= (num / 2); i++)
 	{
 		while (num % i == 0)
 		{
 			num = num / i;
-
-			if (fp <= i)
-				fp = i;
 		}
 	}
-	printf("%d\n", fp);
+	printf("%d\n", i);
 	return (0);
 }
