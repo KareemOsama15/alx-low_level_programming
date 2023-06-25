@@ -10,7 +10,7 @@ int main(void)
 	long int num = 612852475143;
 	unsigned int i;
 
-	for (i = 2; i <= (num / 2); i++)
+	for (i = 2; i < num; i++)
 	{
 		while (num % i == 0)
 		{
