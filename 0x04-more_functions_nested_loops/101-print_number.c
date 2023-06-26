@@ -10,36 +10,40 @@
  */
 void print_number(int n)
 {
-	if (n >= 0)
+	int num = 0;
+
+	if (n > 0)
 	{
-		if (n <= 9)
+		while (n != 0)
 		{
-			_putchar(n + '0');
+			num = num * 10 + n % 10;
+			n /= 10;
 		}
-		else if (n <= 99)
+		while (num != 0)
 		{
-			_putchar((n / 10) + 48);
-			_putchar((n % 10) + 48);
+			_putchar(num % 10 + 48);
+			num /= 10;
 		}
-		else if (n <= 999)
+	}
+	else if (n < 0)
+	{
+		n *= -1;
+
+		_putchar('-');
+		while (n != 0)
 		{
-			_putchar((n / 100) + 48);
-			_putchar((n / 10) % 10 + 48);
-			_putchar((n % 10) + 48);
+			num = num * 10 + n % 10;
+			n /= 10;
 		}
-		else
+		while (num != 0)
 		{
-			_putchar((n / 1000) + 48);
-			_putchar((n / 100) % 10 + 48);
-			_putchar((n / 10) % 10 + 48);
-			_putchar((n % 10) + 48);
+			_putchar(num % 10 + 48);
+			num /= 10;
 		}
 	}
 	else
 	{
-		n *= -1;
-		_putchar('-');
-		_putchar((n / 10) + 48);
-		_putchar((n % 10) + 48);
+		_putchar(48);
 	}
+	_putchar('\n');
 }
