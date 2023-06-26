@@ -45,5 +45,4 @@ void print_number(int n)
 	{
 		_putchar(48);
 	}
-	_putchar('\n');
 }
