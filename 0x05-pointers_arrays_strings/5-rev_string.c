@@ -17,7 +17,7 @@ void rev_string(char *s)
 	{
 		if (s[n] == '\0')
 			break;
-		count++;
+		n++;
 	}
 	str = s;
 
