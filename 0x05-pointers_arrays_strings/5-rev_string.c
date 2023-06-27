@@ -16,13 +16,12 @@ void rev_string(char *s)
 		i++;
 
 	n = i;
-	while (n >= 0)
+	while (n > 0)
 	{
 		_putchar(s[n]);
 
 		if (s[n] == '\0')
 			break;
-
 		n--;
 	}
 }
