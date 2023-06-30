@@ -5,29 +5,30 @@
  * leet - function function that encodes
  * a string into 1337
  *
- * @s: parameter contain string
+ * @str: parameter contain string
  *
  * Return: exchange charactres with numbers
  */
-char *leet(char *s)
+char *leet(char *str)
 {
-	int count = 0, i;
-	int low_letters[] = {97, 101, 111, 116, 108};
-	int upp_letters[] = {65, 69, 79, 84, 76};
-	int numbers[] = {52, 51, 48, 55, 49};
+	/*-return leters and numbers to ascii */
+	/* -1 if to check if index = specified chars */
+	/*-2 loops ,one for continue until reach to \0 */
+	/* ,second to change index of char with num  */
 
-	while (*(s + count) != '\0')
+	int c[] = {65, 69, 79, 84, 76};
+	int s[] = {97, 101, 111, 116, 108};
+	int n[] = {52, 51, 48, 55, 49};
+	int i = 0, e;
+
+	while (str[i] != '\0')
 	{
-		for (i = 0; i < 5; i++)
+		for (e = 0; e < 5; e++)
 		{
-			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
-			{
-				*(s + count) = numbers[i];
-				break;
-			}
+			if (str[i] == c[e] || str[i] == s[e])
+				str[i] = n[e];
 		}
-		count++;
+		i++;
 	}
-
-	return (s);
+	return (str);
 }
