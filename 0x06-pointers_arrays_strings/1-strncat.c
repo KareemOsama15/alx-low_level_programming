@@ -22,6 +22,9 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		*(dest + i + c) = *(src + c);
 		c++;
+
+		if (*(src + c) == '\0')
+			break;
 	}
 	*(dest + i + c) = '\0';
 	return (dest);
