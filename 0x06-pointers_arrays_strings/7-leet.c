@@ -20,7 +20,7 @@ char *leet(char *str)
 	{
 		for (e = 0; e < 5; e++)
 		{
-			if (str[i] == num[e])
+			if (*(str + i) == low_case[e] || *(str + i) == upp_case[e])
 				str[i] = num[e];
 			break;
 		}
