@@ -11,19 +11,20 @@
  */
 char *leet(char *str)
 {
-	int i, e;
-	int upp_case[] = {65, 69, 79, 84, 76};
-	int low_case[] = {97, 101, 111, 116, 108};
+	int i = 0, e;
+	int upp_let[] = {65, 69, 79, 84, 76};
+	int low_let[] = {97, 101, 111, 116, 108};
 	int num[] = {52, 51, 48, 55, 49};
 
-	for (i = 0; *(str + i) != '\0'; i++)
+	while (i = 0; *(str + i) != '\0')
 	{
 		for (e = 0; e < 5; e++)
 		{
-			if (*(str + i) == low_case[e] || *(str + i) == upp_case[e])
+			if (*(str + i) == low_let[e] || *(str + i) == upp_let[e])
 				*(str + i) = num[e];
 			break;
 		}
+		i++;
 	}
 	return (str);
 }
