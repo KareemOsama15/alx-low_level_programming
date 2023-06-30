@@ -12,19 +12,17 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0, e = 0;
+	/* get dest length - add src at most n bytes - add /0 to dest - return dest*/
+
+	int i = 0, c = 0;
 
 	while (*(dest + i) != '\0')
 		i++;
-	while (e < n)
+	while (c < n)
 	{
-		*(dest + i) = *(src + e);
-
-		if (*(src + e) == '\0')
-			break;
-
-		i++;
-		e++;
+		*(dest + i + c) = *(src + c);
+		c++;
 	}
+	*(dest + i + c) = '\0';
 	return (dest);
 }
