@@ -12,8 +12,8 @@
 char *leet(char *str)
 {
 	int i, e;
-	char upp_case[] = {65, 69, 79, 84, 76};
-	char low_case[] = {97, 101, 111, 116, 108};
+	int upp_case[] = {65, 69, 79, 84, 76};
+	int low_case[] = {97, 101, 111, 116, 108};
 	int num[] = {52, 51, 48, 55, 49};
 
 	for (i = 0; str[i] != '\0'; i++)
