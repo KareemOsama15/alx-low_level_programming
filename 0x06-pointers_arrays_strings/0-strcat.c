@@ -11,20 +11,16 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i = 0, e = 0, n = 0, count;
+	/*dest length - add src to length - add \0 to dest - return dest*/
+	int i = 0, c;
 
 	while (*(dest + i) != '\0')
 		i++;
+	for (c = 0; *(src + c) != '\0'; c++)
+	{
+		*(dest + i + c) = *(src + c);
+	}
 
-	while (*(src + e) != '\0')
-		e++;
-
-	n = i + e;
-
-	for (count = 0; count < n && *(src + count) != '\0'; count++)
-		*(dest + i + count) = *(src + count);
-
-	*(dest + i + count) = '\0';
-
+	*(dest + i + c) = '\0';
 	return (dest);
 }
