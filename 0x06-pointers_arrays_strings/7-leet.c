@@ -16,12 +16,12 @@ char *leet(char *str)
 	int low_case[] = {97, 101, 111, 116, 108};
 	int num[] = {52, 51, 48, 55, 49};
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; *(str + i) != '\0'; i++)
 	{
 		for (e = 0; e < 5; e++)
 		{
 			if (*(str + i) == low_case[e] || *(str + i) == upp_case[e])
-				str[i] = num[e];
+				*(str + i) = num[e];
 			break;
 		}
 	}
