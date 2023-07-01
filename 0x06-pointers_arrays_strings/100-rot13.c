@@ -25,7 +25,10 @@ char *rot13(char *str)
 		for (e = 0; e < 52 ; e++)
 		{
 			if (str[i] == alphabet[e])
+			{
 				str[i] = ceaser[e];
+				break;
+			}
 		}
 	}
 	return (str);
