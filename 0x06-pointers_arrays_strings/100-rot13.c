@@ -16,8 +16,8 @@ char *rot13(char *str)
 	/*- 2 loops ,one for continue until reach to \0 */
 	/* ,second to change index of char with ceaser code  */
 
-	char alphabet[] = {ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz};
-	char ceaser[] = {NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm};
+	char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char ceaser[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	int i, e;
 
 	for (i = 0; str[i] != '\0'; i++)
