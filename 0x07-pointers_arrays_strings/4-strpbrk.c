@@ -8,7 +8,8 @@
  * @s: initial segment
  * @accept: string that s comapered with
  *
- * Return: length of s
+ * Return:  beginning of the located substring, 
+ *  or NULL if the substring is not found.
  */
 char *_strpbrk(char *s, char *accept)
 {
