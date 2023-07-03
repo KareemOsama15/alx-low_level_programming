@@ -11,6 +11,7 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
+	/*copy every index of src until n bytes*/
 	unsigned int i = 0;
 
 	while (i < n)
