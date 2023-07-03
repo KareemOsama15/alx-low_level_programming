@@ -14,7 +14,7 @@ char *_strpbrk(char *s, char *accept)
     /*and return this index if found */
     /*and at end return NULL to the end of string s*/
 
-	int i, e;
+	unsigned int i, e;
 
     for (i = 0; *(s + i) != '\0'; i++)
     {
