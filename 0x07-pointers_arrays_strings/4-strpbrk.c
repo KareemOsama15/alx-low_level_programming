@@ -9,20 +9,15 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-    /*looping on indexes of segment they giving s */
-    /* and loop inside accept to search if index of (s = accept)*/
-    /*and return this index if found */
-    /*and at end return NULL to the end of string s*/
+	unsigned int i, j;
 
-	unsigned int i, e;
-
-    for (i = 0; *(s + i) != '\0'; i++)
-    {
-        for (e = 0; *(accept + e) != '\0'; e++)
-        {
-            if (*(s + i) == *(accept + e))
-                return (s + i);
-        }
-    }
-    return ('\0');
+	for (i = 0; *(s + i) != '\0'; i++)
+	{
+		for (j = 0; *(accept + j) != '\0'; j++)
+		{
+			if (*(s + i) == *(accept + j))
+				return (s + i);
+		}
+	}
+	return ('\0');
 }
