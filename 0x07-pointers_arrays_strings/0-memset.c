@@ -13,6 +13,8 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
+	/*we don't get size of b because it const*/
+	/*and not a pointer or array of chars*/
 	unsigned int i = 0;
 
 	while (i < n)
