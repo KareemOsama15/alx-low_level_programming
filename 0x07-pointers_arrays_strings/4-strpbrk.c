@@ -15,7 +15,7 @@ char *_strpbrk(char *s, char *accept)
     /*looping on indexes of segment they giving s */
     /* and loop inside accept to search if index of (s = accept)*/
     /*and return this index if found and at end return NULL to the end of string s*/ 
-	int i, e;
+	unsigned int i, e;
 
     for (i = 0; *(s + i) != '\0'; i++)
     {
