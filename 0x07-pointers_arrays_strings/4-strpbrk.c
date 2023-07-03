@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- *  _strspn- function that searches a string 
+ *  _strpbrk- function that searches a string 
  *  for any of a set of bytes
  *
  * @s: initial segment
@@ -10,7 +10,7 @@
  *
  * Return: length of s
  */
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int i, e;
 
