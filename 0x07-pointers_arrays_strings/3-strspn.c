@@ -12,6 +12,12 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
+	/* loop on s to get index and go for acceot*/
+	/*and loop on it to found uf the char exist or not*/
+	/*and there is 'op = 0' if return to 1 so there is char found*/
+	/*check from second loop and don't check from first loop */
+	/*else check from first loop*/
+
 	int i, e, op;
 
 	for (i = 0; *(s + i) != '\0'; i++)
