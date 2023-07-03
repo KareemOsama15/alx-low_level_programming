@@ -14,15 +14,15 @@ char *_strpbrk(char *s, char *accept)
     /*and return this index if found */
     /*and at end return NULL to the end of string s*/
 
-	unsigned int i, e;
+    unsigned int i, j;
 
-    for (i = 0; *(s + i) != '\0'; i++)
-    {
-        for (e = 0; *(accept + e) != '\0'; e++)
-        {
-            if (*(s + i) == *(accept + e))
-                return (s + i);
-        }
-    }
-    return ('\0');
+	for (i = 0; *(s + i) != '\0'; i++)
+	{
+		for (j = 0; *(accept + j) != '\0'; j++)
+		{
+			if (*(s + i) == *(accept + j))
+				return (s + i);
+		}
+	}
+	return ('\0');
 }
