@@ -12,6 +12,8 @@
  */
 char *_strchr(char *s, char c)
 {
+	/*compare every index of s with char c*/
+	/*if found one break and if = c return it else null*/
 	int i;
 
 	for (i = 0; *(s + i) != '\0'; i++)
