@@ -11,7 +11,7 @@ int palind_check(char *s, int i);
  */
 int is_palindrome(char *s)
 {
-	return (palind_check(char *s, 0));
+	return (palind_check(*s, 0));
 }
 
 /**
@@ -28,7 +28,7 @@ int palind_check(char *s, int i)
 
 	while (*(s + n) != '\0')
 		n++;
-	j = n \ 2;
+	j = n / 2;
 	if (i <= j)
 	{
 		if (*(s + i) == *(s + n - 1 - i))
