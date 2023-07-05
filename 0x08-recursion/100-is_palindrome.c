@@ -38,4 +38,5 @@ int palind_check(char *s, int i)
 		else
 			return (palind_check(s, i + 1));
 	}
+	return (0);
 }
