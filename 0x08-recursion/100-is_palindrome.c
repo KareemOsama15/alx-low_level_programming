@@ -11,7 +11,7 @@ int palind_check(char *s, int i);
  */
 int is_palindrome(char *s)
 {
-	return (palind_check(*s, 0));
+	return (palind_check(s, 0));
 }
 
 /**
@@ -36,6 +36,6 @@ int palind_check(char *s, int i)
 		else if (*(s + i) != *(s + n - 1 - i))
 			return (0);
 		else
-			return (palind_check(*s, i + 1));
+			return (palind_check(s, i + 1));
 	}
 }
