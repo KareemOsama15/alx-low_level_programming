@@ -28,8 +28,8 @@ int palind_check(char *s, int i)
 {
 	if (*(s + i) == *(s + str_len(s - 1 - i)) && i < str_len(s) / 2)
 	{
+		return (palind_check(s, i + 1));
 		return (1);
-		palind_check(s, i + 1);
 	}
 	else
 		return (0);
