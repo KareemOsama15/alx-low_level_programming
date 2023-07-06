@@ -31,11 +31,8 @@ int palind_check(char *s, int i)
 		return (1);
 		palind_check(s, i + 1);
 	}
-	else if (*(s + i) != *(s + str_len(s - 1 - i)))
-	{
+	else
 		return (0);
-		palind_check(s, i + 1);
-	}
 }
 
 /**
