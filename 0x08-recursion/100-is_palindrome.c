@@ -1,5 +1,7 @@
 #include "main.h"
 int palind_check(char *s, int i);
+int str_len(char *s);
+
 
 /**
  * is_palindrome - calls function that returns 1
@@ -24,19 +26,27 @@ int is_palindrome(char *s)
  */
 int palind_check(char *s, int i)
 {
-	int n = 0, j = 0;
+	if (*(s + i) == *(s + str_len(s - 1 - i)) && i < str_len(s) \ 2)
+		return (1);
+	if (*(s + i) != *(s + str_len(s - 1 - i)) && i < str_len(s) \ 2)
+		return (0);
+	else
+		return (palind_check(s, i));
+}
 
-	while (*(s + n) != '\0')
-		n++;
-	j = n / 2;
-	if (i <= j)
-	{
-		if (*(s + i) == *(s + n - 1 - i))
-			return (1);
-		else if (*(s + i) != *(s + n - 1 - i))
-			return (0);
-		else
-			return (palind_check(s, i + 1));
-	}
-	return (0);
+/**
+ * str_len - function return length of string
+ *
+ * @s: arguement of string
+ *
+ * Return: length of string
+ */
+int str_len(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+		i++;
+
+	return (i);
 }
