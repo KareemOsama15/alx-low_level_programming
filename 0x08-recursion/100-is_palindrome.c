@@ -26,7 +26,7 @@ int is_palindrome(char *s)
  */
 int palind_check(char *s, int i)
 {
-	if (s[i] == s[str_len(s) - i - 1])
+	if (s[i] == s[str_len(s) - i - 1] && i < str_len(s) / 2)
 		return (palind_check(s, i + 1));
 	else
 		return (0);
