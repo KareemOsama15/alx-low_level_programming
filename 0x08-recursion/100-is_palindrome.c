@@ -43,10 +43,8 @@ int palind_check(char *s, int i)
  */
 int str_len(char *s)
 {
-	int i = 0;
-
-	while (s[i] != '\0')
-		i++;
-
-	return (i);
+	if (*s != '\0')
+		return (1 + _strlen_recursion(s + 1));
+	else
+		return (0);
 }
