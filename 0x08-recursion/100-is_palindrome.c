@@ -28,10 +28,10 @@ int palind_check(char *s, int i)
 {
 	if (*(s + i) == *(s + str_len(s - 1 - i)) && i < str_len(s) / 2)
 		return (1);
-	if (*(s + i) != *(s + str_len(s - 1 - i)) && i < str_len(s) / 2)
+	else if (*(s + i) != *(s + str_len(s - 1 - i)))
 		return (0);
 	else
-		return (palind_check(s, i));
+		return (palind_check(s, i + 1));
 }
 
 /**
