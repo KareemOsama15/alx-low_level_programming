@@ -16,12 +16,10 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		c = argv[i];
-
-		if (*c < '0' || *c > '9')
-			return (printf("Error\n"), 1);
-		else if (*c >= '0' || *c <= '9')
-			sum += atoi(argv[i]);
+		for (c = argv[i]; *c; c++)
+			if (*c < '0' || *c > '9')
+				return (printf("Error\n"), 1);
+		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 
