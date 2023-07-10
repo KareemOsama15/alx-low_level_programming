@@ -11,7 +11,6 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *ch;
 	unsigned int i;
 
 	/*if size is 0 return null*/
@@ -19,7 +18,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	/*declare pointer to allocate memory in the heap*/
-	ch = malloc(size * sizeof(c));
+	char *ch = (char* )malloc(size * sizeof(c));
 
 	/*return null if pointer of allocating memory fail*/
 	if (ch == NULL)
