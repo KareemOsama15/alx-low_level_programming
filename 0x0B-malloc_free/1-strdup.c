@@ -25,7 +25,7 @@ char *_strdup(char *str)
 		length++;
 
 	/*allocate memory throught new pointer in the heap*/
-	c_str = (char *)malloc(length * sizeof(char));
+	c_str = (char *)malloc((length + 1) * sizeof(char));
 
 	/*if insufficient memory available return null*/
 	if (c_str == NULL)
