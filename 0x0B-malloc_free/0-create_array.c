@@ -26,7 +26,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	/*fullfil allocated memory with value of parameter c passed to func*/
-	for (int i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 		ch[i] = c;
 
 	return (ch);
