@@ -1,3 +1,14 @@
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ * alloc_grid - that returns a pointer to a 2
+ *  dimensional array of integers
+ *
+ * @width:arguement of array width
+ * @height: arguemet of array height
+ * Return: pointer to a 2 dimensional array of int
+ */
 int **alloc_grid(int width, int height)
 {
 	int **arr;
