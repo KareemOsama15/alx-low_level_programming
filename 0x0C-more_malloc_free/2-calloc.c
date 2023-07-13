@@ -21,11 +21,13 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	/*allocate memory for array using elements multiply thier size*/
 	arr = malloc(nmemb * size);
+
 	if (arr == NULL)
 		return (NULL);
 
 	/*set memory to zero*/
 	for (i = 0; i < (nmemb * size); i++)
 		arr[i] = 0;
+
 	return (arr);
 }
