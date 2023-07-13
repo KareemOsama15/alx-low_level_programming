@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	/*condition if n was greater or equal to length of s2*/
 	/* use all bytes of s2*/
-	if (n >= len2)
+	if (n > len2)
 		n = len2;
 
 	/*allocate memory for s1, s2*/
@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 
 	/*fullfil allocated memory with its value of 2 passed strings*/
-	for (i = 0; i < len1; i++)
+	for (i = 0; i < s1[i] != '\0'; i++)
 		str[i] = s1[i];
 	for (j = 0; j < n; j++)
 	{
