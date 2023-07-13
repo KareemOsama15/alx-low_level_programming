@@ -23,27 +23,25 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		;
 	for (len2 = 0; s2[len2] != '\0'; len2++)
 		;
-	/*allocate memory for s1*/
+	
+	/*condition if s1 or s2 was null treat them like empty string*/
 	if (s1 == NULL)
 		s1 = "";
-	str = malloc(sizeof(char) * len1);
-	if (str == NULL)
-		return (NULL);
+	if (s2 == NULL)
+		s2 = "";
 
 	/*condition if n was greater or equal to length of s2*/
 	/* use all bytes of s2*/
 	if (n >= len2)
 		n = len2;
 
-	/*allocate memory for s2*/
-	if (s2 == NULL)
-		s2 = "";
-	str = malloc(sizeof(char) * (n + 1));
+	/*allocate memory for s1, s2*/
+	str = malloc(sizeof(char) * (len1 + n + 1));
 	if (str == NULL)
 		return (NULL);
 
 	/*fullfil allocated memory with its value of 2 passed strings*/
-	for (i = 0; i < len1; i++)
+	for (i = 0; i < (len1 + 1); i++)
 		str[i] = s1[i];
 	for (j = 0; j < n; j++, i++)
 		str[i] = s2[j];
