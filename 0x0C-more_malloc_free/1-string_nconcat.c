@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 
 	/*fullfil allocated memory with its value of 2 passed strings*/
-	for (i = 0; i < (len1 + 1); i++)
+	for (i = 0; i < len1; i++)
 		str[i] = s1[i];
 	for (j = 0; j < n; j++, i++)
 		str[i] = s2[j];
