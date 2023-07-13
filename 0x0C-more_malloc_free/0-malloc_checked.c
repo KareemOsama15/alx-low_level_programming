@@ -7,7 +7,8 @@
  *
  * @b: arguement contain test cases
  *
- * Return: no return
+ * Return:  pointer to the allocated memory
+	if fails cause normal process termination (98)
  */
 void *malloc_checked(unsigned int b);
 {
