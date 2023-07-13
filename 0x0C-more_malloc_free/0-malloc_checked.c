@@ -10,9 +10,10 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *ptr;
+	/*declare pointer to allocate memory for passed values*/
+	int *ptr = malloc(b);
 
-	ptr = malloc(b);
+	/*if process fails exit with terminated value 98*/
 	if (ptr == NULL)
 		exit(98);
 	return (ptr);
