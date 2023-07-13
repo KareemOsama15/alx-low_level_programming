@@ -8,7 +8,7 @@
  * @s2: arguement contain string 2
  * @n: bytes will use in s2
  *
- * Return:  newly allocated space in memory,
+ * Return: newly allocated space in memory,
  * which contains s1, followed by the first n bytes
  *   of s2, and null terminated
  */
@@ -27,6 +27,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 == NULL)
 		s1 = "";
 	str = malloc(sizeof(char) * len1);
+	if (str == NULL)
+		return (NULL);
 
 	/*condition if n was greater or equal to length of s2 use all bytes of s2*/
 	if (n >= len2)
@@ -36,6 +38,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 	str = malloc(sizeof(char) * (n + 1));
+	if (str == NULL)
+		return (NULL);
 
 	/*fullfil allocated memory with its value of 2 passed strings*/
 	for (i = 0; i < len1; i++)
