@@ -23,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		;
 	for (len2 = 0; s2[len2] != '\0'; len2++)
 		;
-	
+
 	/*condition if s1 or s2 was null treat them like empty string*/
 	if (s1 == NULL)
 		s1 = "";
