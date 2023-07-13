@@ -30,7 +30,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (str == NULL)
 		return (NULL);
 
-	/*condition if n was greater or equal to length of s2 use all bytes of s2*/
+	/*condition if n was greater or equal to length of s2*/
+	/* use all bytes of s2*/
 	if (n >= len2)
 		n = len2;
 
