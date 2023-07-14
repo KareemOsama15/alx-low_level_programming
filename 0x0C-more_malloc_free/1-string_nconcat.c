@@ -18,17 +18,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 	unsigned int len1, len2, i, j;
 
-	/*get length of s1, s2*/
-	for (len1 = 0; s1[len1] != '\0'; len1++)
-		;
-	for (len2 = 0; s2[len2] != '\0'; len2++)
-		;
-
 	/*condition if s1 or s2 was null treat them like empty string*/
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+
+	/*get length of s1, s2*/
+	for (len1 = 0; s1[len1] != '\0'; len1++)
+		;
+	for (len2 = 0; s2[len2] != '\0'; len2++)
+		;
 
 	/*condition if n was greater or equal to length of s2*/
 	/* use all bytes of s2*/
