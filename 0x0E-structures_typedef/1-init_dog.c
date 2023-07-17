@@ -14,7 +14,7 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	while (*d)
+	while (d)
 	{
 		(*d).name = name;
 		(*d).age = age;
