@@ -1,22 +1,22 @@
 #ifndef _DOG_H
 #define _DOG_H
 
-/*
- * struct dog - structure contain some 
+/**
+ * struct dog- structure contain some
  *  information about dog
  *
  * @name: name of the dog
- * @age: the age of the dog 
+ * @age: the age of the dog
  * @owner: the owner of the dog
  *
- * description: a structure called dog 
- *  include some information about it 
+ * description: a structure called dog
+ *  include some information about it
  */
-struct dog 
+struct dog
 {
-    char *name;
-    float age;
-    char *owner;
+	char *name;
+	float age;
+	char *owner;
 };
 
 
