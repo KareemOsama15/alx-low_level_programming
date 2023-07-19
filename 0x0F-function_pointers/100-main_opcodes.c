@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 		if (i != (byt - 1))
 			printf(" ");
 	}
-	printf(\n);
+	printf("\n");
 
 	return (0);
 }
