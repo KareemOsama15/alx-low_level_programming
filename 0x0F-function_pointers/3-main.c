@@ -11,16 +11,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int num1, num2;
-	int result;
+	int num1, num2, result;
+	int *ptr;
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if ((argv[2] != "+") || (argv[2] != "-") || (argv[2] != "*") ||
-		(argv[2] != "/") || (argv[2] != "%"))
+	ptr = get_op_func(argv[2])
+	if (!(ptr))
 	{
 		printf("Error\n");
 		exit(98);
