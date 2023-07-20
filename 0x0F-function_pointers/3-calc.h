@@ -5,13 +5,11 @@
 #include <stdio.h>
 
 /**
-* struct op - stucture tag name
-*
-* @op - pointer to operator.
-* @f - function pointer.
-*
-* op_t - typedef of structure
-*/
+ * struct op - Struct op
+ *
+ * @op: The operator
+ * @f: The function associated
+ */
 typedef struct op
 {
 	char *op;
