@@ -42,7 +42,7 @@ void print_all(const char * const format, ...)
 					x = 0;
 					break;
 		}
-		if ((i != arg_len - 1) && (x == 1))
+		if ((i != (arg_len - 1)) && (x == 1))
 			printf(", ");
 		i++;
 	}
