@@ -3,7 +3,7 @@
 
 /**
  * argstostr - function that concatenates
- *  all the arguments of your program.
+ *  all the arguments of your program
  *
  * @ac: arguement of count
  * @av: arguemet of vector
