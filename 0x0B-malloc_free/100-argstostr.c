@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * free_grid - function that concatenates 
+ * argstostr - function that concatenates 
  *  all the arguments of your program.
  *
  * @ac: arguement of count
