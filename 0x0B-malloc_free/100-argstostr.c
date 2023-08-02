@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * argstostr - function that concatenates 
+ * argstostr - function that concatenates
  *  all the arguments of your program.
  *
  * @ac: arguement of count
