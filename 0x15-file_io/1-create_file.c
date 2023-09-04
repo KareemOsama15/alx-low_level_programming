@@ -10,18 +10,17 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, n_write;
+	int fd, n_write, len;
 
 	if (!filename)
 		return (-1);
-	if (!text_content)
-		return (NULL);
-
 	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 	if (fd == -1)
 		return (-1);
 
-	for (len = 0; *text_conten; len++)
+	if (!text_content)
+		text_content = "";
+	for (len = 0; *text_content; len++)
 		text_content++;
 
 	n_write = write(fd, text_content, len);
