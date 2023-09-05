@@ -6,10 +6,10 @@
  * @argv: arguments vector.
  * Return: Always 0.
  */
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
-	int fd, n_read, len = 100;
-	char *buffer;
+	int fd, n_read;
+	char buffer[100];
 
 	if (argc != 2)
 	{
@@ -24,7 +24,8 @@ int main(int argc, char *argv)
 		exit(98);
 	}
 
-	n_read = read(fd, buffer, len);
+	lseek(fd, 0, SEEK_SET);
+	n_read = read(fd, buffer, 100);
 	if (n_read == -1)
 	{
 		dprintf(STDERR_FILENO, "File can't be read\n");
