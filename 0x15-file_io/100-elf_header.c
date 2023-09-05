@@ -8,8 +8,9 @@
  */
 int main(int argc, char **argv)
 {
+	/*Task not completed*/
 	int fd, n_read;
-	char buffer[100];
+	char buffer[27];
 
 	if (argc != 2)
 	{
@@ -24,8 +25,7 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
-	lseek(fd, 0, SEEK_SET);
-	n_read = read(fd, buffer, 100);
+	n_read = read(fd, buffer, 27);
 	if (n_read == -1)
 	{
 		dprintf(STDERR_FILENO, "File can't be read\n");
