@@ -14,6 +14,9 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	if (!head)
 		return (NULL);
+	else if (index == 0)
+		return (temp);
+
 	while (index != 0)
 	{
 		/* 10 15 20 30 40   idx = 4*/
