@@ -22,7 +22,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	{
 		/* 10 15 20 30 40   idx = 4*/
 		if (temp == NULL)
-        	return (NULL);
+			return (NULL);
 		temp = temp->next;
 		index--;
 	}
