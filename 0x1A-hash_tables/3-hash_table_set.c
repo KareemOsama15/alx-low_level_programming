@@ -10,7 +10,7 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned int i;
+	unsigned int i, valid = 0;
 	hash_node_t *newNode = NULL, *temp = NULL;
 
 	if (ht == NULL || key == NULL || *key ==  '\0' || strlen(key) == 0)
@@ -24,10 +24,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			free(temp->value);
 			temp->value = strdup(value);
+			valid = 1;
 		}
 		temp = temp->next;
 	}
-	if (!temp)
+	if (valid == 0)
 	{
 		newNode = malloc(sizeof(hash_node_t));
 		if (newNode == NULL)
