@@ -1,0 +1,21 @@
+>>syntax:
+
+target: prerequisites
+(tab) recipe
+
+>>ex:
+all: display
+    gcc -c test.c -o output
+display:
+    echo "hello, world"
+
+>>using @ helps not allow to show command at run time
+display:
+    @echo "hello, world"
+
+>>using variable
+file = test.c
+all: display
+    gcc -c $(file) -o output
+display:
+    echo "hello, world"
