@@ -12,8 +12,7 @@
 */
 int jump_search(int *array, size_t size, int value)
 {
-	/* 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 */
-	size_t low = 0, sqroot = sqrt(size), high = sqroot, i;
+	size_t low = 0, step = sqrt(size), high = step, i;
 
 	if (!array)
 		return (-1);
@@ -25,7 +24,7 @@ int jump_search(int *array, size_t size, int value)
 			break;
 
 		low = high;
-		high += sqroot;
+		high += step;
 	}
 
 	if (high >= size)
